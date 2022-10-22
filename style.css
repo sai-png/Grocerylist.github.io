@@ -1,0 +1,100 @@
+body{
+  background-image: linear-gradient(to bottom, #f9f9f9, #e7e4f6, #d3d0f3, #bebdf1, #a7aaee);
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.h1{
+   filter: drop-shadow(4px 4px 2px #33e769);
+}
+body{
+  font-family: "mumblers_demoregular";
+  color: #262626;
+}
+
+.container{
+  width: 95%;
+  margin: auto;
+  display: flex;
+}
+
+.notebook{
+  width: 600px;
+  min-height: 100vh;
+  padding-top: 20px;
+  margin:auto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 80px;
+  background-image: linear-gradient(to bottom, #f9f9f9, #e7e4f6, #d3d0f3, #bebdf1, #a7aaee);
+  box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.50);  
+}
+
+.title{
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.input-container{
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.input-container i{
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: rgb(237, 80, 103);
+  
+}
+
+.input-container input{
+  font-family: inherit;
+  outline: 0;
+  border: 0;
+  width: 65%;
+  font-size: 1.5rem;
+  border-bottom: 3px solid lightgray;
+  border-radius: 12px;
+}
+
+#groceryItems{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 75%;
+  font-size: 1.2rem;
+}
+
+#groceryItems h2{
+  cursor: pointer;
+}
+
+@media(max-width:768px) {
+  #groceryItems {
+    font-size: 1.2rem;
+  }
+}
+
+@media(max-width:480px){
+  .title{
+    font-size: 1rem;
+  }
+
+  .input-container i{
+    font-size: 2rem;
+  }
+
+  .input-container input{
+    font-size: 1rem;
+  }
+
+  #groceryItems{
+    font-size: 0.9rem;
+  }
+}
